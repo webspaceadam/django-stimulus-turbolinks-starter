@@ -1,0 +1,1 @@
+# A django-stimulus-turbolinks-starter
