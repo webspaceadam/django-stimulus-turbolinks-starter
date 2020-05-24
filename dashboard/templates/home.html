@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{% static 'main.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+    <title>Django Stimulus Turbolinks Starter</title>
+</head>
+<body>
+    <div data-controller="hello" class="content">
+      <p>
+        Hello Stimulus!
+      </p>
+        <input data-target="hello.name" type="text">
+      
+        <button data-action="click->hello#greet">
+          Greet
+        </button>
+        
+        </br>
+        <span data-target="hello.output">
+        </span>
+      </div>
+</body>
+</html>
